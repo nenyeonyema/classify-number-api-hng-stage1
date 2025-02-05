@@ -34,7 +34,10 @@ Install dependencies `npm install`
 Run the project locally `node app.js` or `npm run start` or `nodemon app.js`
 
 **Access the API endpoint**
-https://classify-number-api-hng-stage1-git-main-chinenyes-projects.vercel.app/api/classify-number
+https://classify-number-api-hng-stage1.vercel.app/
+
+**Test the API using queries**
+https://classify-number-api-hng-stage1.vercel.app/api/classify-number?number=371
 
 **Hire A Backend NodeJS Developers** https://hng.tech/hire/nodejs-developers
 
