@@ -8,6 +8,9 @@ app.use(express.json());
 
 const PORT = process.env.PORT
 
+app.get("/", (req, res) => {
+    return res.status(200).send("Welcome to the Number Classification API")
+})
 
 app.get("/api/classify-number", (req, res) => {
 
