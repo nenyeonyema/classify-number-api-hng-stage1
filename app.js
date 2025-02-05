@@ -86,14 +86,13 @@ app.get("/api/classify-number", (req, res) => {
         
         // Checks if Number is an Amstrong, Odd or Even.
         if (sumTemp === Math.abs(searchQuery)){
-            newProperties.push("amstrong")
+            newProperties.push("armstrong")
             funFact = `${searchQuery}  is an Armstrong number because ${numArray.join(" + ")} = ${temp}`
-        }
-        /**else{
-               newProperties.push("notAmstrong")
-               funFact = `${searchQuery}  is Not an Armstrong number because ${numArray.join(" + ")} != ${temp}`
+        } else{
+            // newProperties.push("notArmstrong")
+            funFact = `${searchQuery}  is Not an Armstrong number because ${numArray.join(" + ")} != ${temp}`
          }
-        **/
+       
         if(searchQuery % 2 === 0){
             newProperties.push("even");
         } else{
