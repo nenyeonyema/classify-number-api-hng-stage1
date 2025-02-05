@@ -88,10 +88,12 @@ app.get("/api/classify-number", (req, res) => {
         if (sumTemp === Math.abs(searchQuery)){
             newProperties.push("amstrong")
             funFact = `${searchQuery}  is an Armstrong number because ${numArray.join(" + ")} = ${temp}`
-        } else{
-            newProperties.push("notAmstrong")
-            funFact = `${searchQuery}  is Not an Armstrong number because ${numArray.join(" + ")} != ${temp}`
         }
+        /**else{
+               newProperties.push("notAmstrong")
+               funFact = `${searchQuery}  is Not an Armstrong number because ${numArray.join(" + ")} != ${temp}`
+         }
+        **/
         if(searchQuery % 2 === 0){
             newProperties.push("even");
         } else{
