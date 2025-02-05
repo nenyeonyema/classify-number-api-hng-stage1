@@ -8,9 +8,6 @@ app.use(express.json());
 
 const PORT = process.env.PORT
 
-app.get("/", (req, res) => {
-    res.send("Welcome to my Number API");
-});
 
 app.get("/api/classify-number", (req, res) => {
 
